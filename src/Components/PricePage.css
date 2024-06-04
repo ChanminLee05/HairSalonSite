@@ -7,11 +7,12 @@
     font-size: 2em;
     margin-bottom: 30px;
     font-family: "Staatliches", sans-serif;
+    text-align: center;
 }
 .price-list-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .price-icon-img {
     width: 30px;
