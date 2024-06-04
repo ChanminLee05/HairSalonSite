@@ -26,11 +26,18 @@ let data:HairSalon = {
     { id: "7", category: 'Hair Perm', subCategory: 'Women Hair Perm', description: "Basic perm for women", price: "$120 +" },
     { id: "8", category: 'Hair Perm', subCategory: 'Women Heat Perm', description: "Standard heat perm for women", price: "$160 +" },
     { id: "9", category: 'Hair Perm', subCategory: 'Women Magic Straight Perm', description: "Standard magic straight perm for women", price: "$160 +" },
-    { id: "10", category: 'Coloring', subCategory: 'Men Hair Color', description: "Basic hair coloring for men", price: "$60 +" },
-    { id: "11", category: 'Coloring', subCategory: 'Women Hair Color', description: "Basic hair coloring for women", price: "$120 +" },
-    { id: "12", category: 'Treatment', subCategory: 'Men Hair Treatment', description: "Basic hair treatment for men", price: "$40 +" },
-    { id: "13", category: 'Treatment', subCategory: 'Women Hair Treatment', description: "Basic hair treatment for women", price: "$65 +" },
-    { id: "14", category: 'Hair Extension', subCategory: 'Hair Extension', description: "Standard hair extensions", price: "$100 +" },
+    { id: "10", category: 'Coloring', subCategory: 'Men\'s Coloring', description: "Basic hair coloring for men", price: "$40 +" },
+    { id: "11", category: 'Coloring', subCategory: 'Women\'s Coloring', description: "Basic hair coloring for women", price: "$120 +" },
+    { id: "12", category: 'Coloring', subCategory: 'Color Refresh', description: "Basic hair coloring for women", price: "$70 +" },
+    { id: "13", category: 'Coloring', subCategory: 'Ombre', description: "Basic hair coloring for women", price: "Upon Consultation" },
+    { id: "14", category: 'Treatment', subCategory: 'Men Hair Treatment', description: "Basic hair treatment for men", price: "$40 +" },
+    { id: "15", category: 'Treatment', subCategory: 'Women Hair Treatment', description: "Basic hair treatment for women", price: "$65 +" },
+    { id: "16", category: 'Hair Styling', subCategory: 'Shampoo & Blowout', description: "Basic hair styling with shampoo and dry", price: "$35 +" },
+    { id: "17", category: 'Hair Styling', subCategory: 'Curl', description: "Basic hair styling with curl service", price: "$35 +" },
+    { id: "18", category: 'Hair Styling', subCategory: 'Straightening', description: "Basic hair styling with straightening", price: "$35 +" },
+    { id: "19", category: 'Hair Styling', subCategory: 'Special Occasion', description: "Basic hair styling for special occasion", price: "$65 +" },
+    { id: "20", category: 'Hair Styling', subCategory: 'Bridal', description: "Basic hair styling for bridal", price: "Upon Consultation" },
+    { id: "21", category: 'Hair Extension', subCategory: 'Hair Extension', description: "Standard hair extensions", price: "$100 +" },
   ]
 }
 
