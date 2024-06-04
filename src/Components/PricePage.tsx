@@ -6,6 +6,7 @@ import Perm from "../Assets/perm.png";
 import Coloring from "../Assets/hair-dye.png";
 import Treatment from "../Assets/hair-treatment.png";
 import Extension from "../Assets/hair-extension.png";
+import Styling from "../Assets/hair-styling.png";
 
 interface OwnProps {
     info: ServiceOnly
@@ -16,20 +17,27 @@ const PricePage: React.FC<OwnProps> = ({info}) => {
     const colorings = info.services.filter(service => service.category === 'Coloring');
     const treatments = info.services.filter(service => service.category === 'Treatment');
     const hairExtensions = info.services.filter(service => service.category === 'Hair Extension');
+    const hairStyling = info.services.filter(service => service.category === 'Hair Styling');
+
     return (
         <div className="price-form">
             <h4 className="price-form-title">Price List</h4>
             <div className="price-list-container">
                 <div className="price-container">
                     <label className="label-category">
-                        <img src={Extension} alt={Extension} className="price-icon-img"/>
-                        Hair Extension
+                        <img src={Scissors} alt={Scissors} className="price-icon-img"/>
+                        Hair Cut
                     </label>
                     <ul className="sub-category-list">
-                        {hairExtensions.map(service => (
+                        {hairCuts.map(service => (
                             <li key={service.id} className="sub-category-item">
-                                <span className="sub-category">{service.subCategory}</span>
-                                <span className="price">{service.price}</span>
+                                <div className="sub-category-container">
+                                    <span className="sub-category">{service.subCategory}</span>
+                                    <span className="price">{service.price}</span>
+                                </div>
+                                <div className="description-container">
+                                    <p className="description">{service.description}</p>
+                                </div>
                             </li>
                         ))}
                     </ul>
@@ -42,8 +50,13 @@ const PricePage: React.FC<OwnProps> = ({info}) => {
                     <ul className="sub-category-list">
                         {colorings.map(service => (
                             <li key={service.id} className="sub-category-item">
-                                <span className="sub-category">{service.subCategory}</span>
-                                <span className="price">{service.price}</span>
+                                <div className="sub-category-container">
+                                    <span className="sub-category">{service.subCategory}</span>
+                                    <span className="price">{service.price}</span>
+                                </div>
+                                <div className="description-container">
+                                    <p className="description">{service.description}</p>
+                                </div>
                             </li>
                         ))}
                     </ul>
@@ -56,8 +69,13 @@ const PricePage: React.FC<OwnProps> = ({info}) => {
                     <ul className="sub-category-list">
                         {hairPerms.map(service => (
                             <li key={service.id} className="sub-category-item">
-                                <span className="sub-category">{service.subCategory}</span>
-                                <span className="price">{service.price}</span>
+                                <div className="sub-category-container">
+                                    <span className="sub-category">{service.subCategory}</span>
+                                    <span className="price">{service.price}</span>
+                                </div>
+                                <div className="description-container">
+                                    <p className="description">{service.description}</p>
+                                </div>
                             </li>
                         ))}
                     </ul>
@@ -70,22 +88,51 @@ const PricePage: React.FC<OwnProps> = ({info}) => {
                     <ul className="sub-category-list">
                         {treatments.map(service => (
                             <li key={service.id} className="sub-category-item">
-                                <span className="sub-category">{service.subCategory}</span>
-                                <span className="price">{service.price}</span>
+                                <div className="sub-category-container">
+                                    <span className="sub-category">{service.subCategory}</span>
+                                    <span className="price">{service.price}</span>
+                                </div>
+                                <div className="description-container">
+                                    <p className="description">{service.description}</p>
+                                </div>
                             </li>
                         ))}
                     </ul>
                 </div>
                 <div className="price-container">
                     <label className="label-category">
-                        <img src={Scissors} alt={Scissors} className="price-icon-img"/>
-                        Hair Cut
+                        <img src={Styling} alt={Styling} className="price-icon-img"/>
+                        Hair Styling
                     </label>
                     <ul className="sub-category-list">
-                        {hairCuts.map(service => (
+                        {hairStyling.map(service => (
                             <li key={service.id} className="sub-category-item">
-                                <span className="sub-category">{service.subCategory}</span>
-                                <span className="price">{service.price}</span>
+                                <div className="sub-category-container">
+                                    <span className="sub-category">{service.subCategory}</span>
+                                    <span className="price">{service.price}</span>
+                                </div>
+                                <div className="description-container">
+                                    <p className="description">{service.description}</p>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="price-container">
+                    <label className="label-category">
+                        <img src={Extension} alt={Extension} className="price-icon-img"/>
+                        Hair Extension
+                    </label>
+                    <ul className="sub-category-list">
+                        {hairExtensions.map(service => (
+                            <li key={service.id} className="sub-category-item">
+                                <div className="sub-category-container">
+                                    <span className="sub-category">{service.subCategory}</span>
+                                    <span className="price">{service.price}</span>
+                                </div>
+                                <div className="description-container">
+                                    <p className="description">{service.description}</p>
+                                </div>
                             </li>
                         ))}
                     </ul>

@@ -1,12 +1,11 @@
 import React from 'react';
-import {ServiceOnly} from "../Model/HairSalon";
 import "./ServicePage.css";
 import Cut from '../Assets/cut.jpg';
 import Perm from '../Assets/perm.jpg';
 import Color from '../Assets/pic-3.png';
 import Treatment from '../Assets/treatment.jpg';
 import Extension from '../Assets/extension.png';
-
+import Styling from "../Assets/styling.jpg";
 
 const ServicePage:React.FC = () => {
     return (
@@ -50,6 +49,16 @@ const ServicePage:React.FC = () => {
                         <img src={Treatment} className="carousel-img-color" alt="..."/>
                         <div className="carousel-txt-container">
                             <h4>Hair Treatment</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quam, ratione? Architecto
+                                autem dignissimos facilis laboriosam magnam nam, nihil placeat sit ullam vero!
+                                Asperiores expedita iure quibusdam, tempore vel voluptates.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <img src={Styling} className="carousel-img-color" alt="..."/>
+                        <div className="carousel-txt-container">
+                            <h4>Hair Styling</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quam, ratione? Architecto
                                 autem dignissimos facilis laboriosam magnam nam, nihil placeat sit ullam vero!
                                 Asperiores expedita iure quibusdam, tempore vel voluptates.
