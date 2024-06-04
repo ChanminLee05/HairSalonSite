@@ -20,28 +20,32 @@
     color: white;
     font-size: 3em;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 .carousel-container {
     height: 330px;
 }
 .carousel-inner {
     height: 260px;
+    display: flex;
+    justify-content: flex-start;
 }
 .carousel-img {
     height: 260px;
     width: 340px;
     filter: grayscale(1);
-    margin-right: 300px;
+    margin-left: 300px;
 }
 .carousel-img-color {
     height: 260px;
     width: 340px;
-    margin-right: 300px;
+    margin-left: 300px;
 }
 .carousel-txt-container {
     position: absolute;
     top: 0;
-    right: 400px;
+    right: 350px;
     width: 350px;
 }
 .carousel-txt-container h4,
