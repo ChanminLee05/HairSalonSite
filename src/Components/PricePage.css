@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Questrial&family=Staatliches&family=Yellowtail&display=swap');
+
+.price-form {
+    margin: 100px 100px 50px 100px;
+}
+.price-form-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-family: "Staatliches", sans-serif;
+}
+.price-list-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.price-icon-img {
+    width: 30px;
+    height: 30px;
+    background-color: #ebd9dd;
+    border-radius: 50px;
+    padding: 5px;
+    margin-right: 10px;
+}
+.label-category {
+    border: 2px solid rgba(255, 255, 255, 1);
+    padding: 10px;
+    background-color: rgba(246, 202, 202, 0.3);
+    width: 100%;
+    font-family: "Yellowtail", cursive;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.price-container {
+    width: 280px;
+}
+.sub-category-list {
+    list-style-type: none;
+    border: 2px solid rgba(255, 255, 255, 1);
+    padding: 10px;
+    background-color: rgba(246, 202, 202, 0.3);
+    width: 100%;
+}
+.sub-category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 1vw;
+}
+.sub-category {
+    flex: 3;
+    text-align: left;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 1.2em;
+}
+.price {
+    flex: 1;
+    text-align: right;
+    font-family: "Staatliches", sans-serif;
+    font-size: 1.2em;
+    color: #d7a64a;
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+    .price-form {
+        margin: 0;
+        width: 768px;
+    }
+    .price-list-container {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    .price-icon-img {
+        width: 50px;
+        height: 50px;
+        background-color: #ebd9dd;
+        border-radius: 50px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    .label-category {
+        padding: 10px;
+        font-size: 2.5em;
+    }
+    .price-container {
+        width: 350px;
+        margin: 8px;
+    }
+    .sub-category-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        font-size: 1.5em;
+    }
+    .sub-category {
+        flex: 3;
+        text-align: left;
+        font-family: "Maven Pro", sans-serif;
+        font-size: 1.2em;
+    }
+    .price {
+        flex: 1;
+        text-align: right;
+        font-family: "Staatliches", sans-serif;
+        font-size: 1.2em;
+        color: #d7a64a;
+    }
+}

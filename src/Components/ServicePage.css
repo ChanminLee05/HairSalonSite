@@ -1,0 +1,81 @@
+#service-page {
+    margin: 100px 0 50px 0;
+    padding: 30px;
+    background: rgba(47, 47, 47, 0.8);
+    z-index: 1;
+    position: relative;
+}
+#service-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/src/Assets/main-pic1.jpg") no-repeat center bottom;
+    z-index: -1;
+    opacity: 0.2;
+}
+#service-page h3 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+.carousel-container {
+    height: 330px;
+}
+.carousel-inner {
+    height: 260px;
+}
+.carousel-img {
+    height: 260px;
+    width: 340px;
+    filter: grayscale(1);
+    margin-right: 300px;
+}
+.carousel-img-color {
+    height: 260px;
+    width: 340px;
+    margin-right: 300px;
+}
+.carousel-txt-container {
+    position: absolute;
+    top: 0;
+    right: 400px;
+    width: 350px;
+}
+.carousel-txt-container h4,
+.carousel-txt-container p {
+    color: white;
+    text-align: left;
+}
+.carousel-txt-container h4 {
+    font-size: 2.5em;
+}
+.carousel-txt-container p {
+    font-size: 1em;
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+    #service-page {
+        width: 768px;
+    }
+    .carousel-img {
+        height: 260px;
+        width: 250px;
+        filter: grayscale(1);
+        margin-right: 270px;
+    }
+    .carousel-img-color {
+        height: 260px;
+        width: 250px;
+        margin-right: 270px;
+    }
+    .carousel-txt-container {
+        position: absolute;
+        top: 0;
+        right: 80px;
+        width: 270px;
+    }
+}

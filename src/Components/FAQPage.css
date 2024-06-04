@@ -1,0 +1,41 @@
+/*FAQ-section*/
+#FAQ {
+    margin: 100px 300px 200px 300px;
+}
+.FAQ-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #414040;
+    text-align: left;
+}
+.FAQ-question {
+    font-family: "Gloock", serif;
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
+}
+.FAQ-answer {
+    font-size: 1em;
+    text-align: left;
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+    #FAQ {
+        margin: 0 0 100px 0;
+        width: 768px;
+        padding: 50px 30px;
+    }
+    .FAQ-title {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    .FAQ-question {
+        font-size: 1.9em;
+        margin: 0;
+    }
+    .FAQ-answer {
+        font-size: 1.8em;
+        text-align: left;
+    }
+}

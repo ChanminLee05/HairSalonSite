@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Dancing+Script:wght@400..700&family=Pacifico&family=Signika+Negative:wght@300..700&display=swap');
+
+.navbar {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+}
+.container-fluid {
+    position: relative;
+    padding: 10px 20px;
+}
+
+/*Title*/
+.brand-container {
+    display: flex;
+}
+.brand-title1 {
+    position: absolute;
+    top: -10px;
+    left: 400px;
+    font-size: 1.3em;
+    font-family: "Pacifico", cursive;
+}
+.brand-title2 {
+    position: absolute;
+    top: 13px;
+    left: 420px;
+    font-size: 1.1em;
+    font-family: "Signika Negative", sans-serif;
+}
+
+/*Shine Tab*/
+.shine-tab {
+    position: absolute;
+    top: -10px;
+    right: 300px;
+}
+.nav-link {
+    font-size: 1.2em;
+    margin-right: 20px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+    .navbar {
+        height: 100px;
+    }
+    .brand-title1 {
+        top: -10px;
+        left: 340px;
+        font-size: 2em;
+    }
+    .brand-title2 {
+        top: 20px;
+        left: 360px;
+        font-size: 1.9em;
+    }
+    .navbar-toggler {
+        margin-right: 20px;
+    }
+    .shine-tab {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: white;
+        padding: 5px 10px;
+    }
+    .nav-link {
+        font-size: 2em;
+        margin-right: 20px;
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
+        text-align: left;
+    }
+}
