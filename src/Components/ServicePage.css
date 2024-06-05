@@ -1,6 +1,6 @@
 #service-page {
-    margin: 100px 0 50px 0;
-    padding: 30px;
+    margin-bottom: 100px;
+    padding: 100px 30px 30px 30px;
     background: rgba(47, 47, 47, 0.8);
     z-index: 1;
     position: relative;
@@ -27,25 +27,25 @@
     height: 330px;
 }
 .carousel-inner {
-    height: 260px;
+    height: 300px;
     display: flex;
     justify-content: flex-start;
 }
 .carousel-img {
-    height: 260px;
+    height: 300px;
     width: 440px;
     filter: grayscale(1);
-    margin-left: 450px;
+    margin-left: 430px;
 }
 .carousel-img-color {
-    height: 260px;
+    height: 300px;
     width: 440px;
-    margin-left: 450px;
+    margin-left: 430px;
 }
 .carousel-txt-container {
     position: absolute;
     top: 0;
-    right: 500px;
+    right: 550px;
     width: 350px;
 }
 .carousel-txt-container h4,

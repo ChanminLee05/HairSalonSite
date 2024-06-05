@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Link} from "react-router-dom";
 import {HairSalon} from "../Model/HairSalon";
 import './MainPage.css';
@@ -18,6 +18,28 @@ interface OwnProps {
     info: HairSalon
 }
 const MainPage:React.FC<OwnProps> = ({info}) => {
+    const profileImgRef = useRef<HTMLImageElement>(null);
+    const aboutUsTxtRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const aboutUsSection = document.getElementById('about-us');
+            const aboutUsSectionTop = aboutUsSection?.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (aboutUsSectionTop && aboutUsSectionTop < windowHeight - 100) {
+                profileImgRef.current?.classList.add('animate');
+                aboutUsTxtRef.current?.classList.add('animate');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className="main-page-body">
             <div className="main-pic-container">
@@ -31,8 +53,8 @@ const MainPage:React.FC<OwnProps> = ({info}) => {
                 <img src={MainImage} alt={MainImage} className="main-img"/>
             </div>
             <div id="about-us">
-                <img src={ProfileImage} alt={ProfileImage} className="profile-img"/>
-                <div className="about-us-txt-container">
+                <img src={ProfileImage} alt={ProfileImage} className="profile-img" ref={profileImgRef}/>
+                <div className="about-us-txt-container" ref={aboutUsTxtRef}>
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci blanditiis dignissimos eius
                         eligendi, harum libero maiores necessitatibus nesciunt veritatis. Aut dolores explicabo fuga nam
