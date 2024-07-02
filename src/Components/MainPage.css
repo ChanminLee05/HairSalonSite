@@ -126,6 +126,7 @@
     .profile-img {
         width: 370px;
         height: 400px;
+        transform: none;
     }
     .about-us-txt-container {
         height: 300px;
