@@ -64,6 +64,7 @@
 @media (max-width: 768px) {
     #service-page {
         width: 768px;
+        max-width: 768px;
     }
     .carousel-img {
         height: 260px;

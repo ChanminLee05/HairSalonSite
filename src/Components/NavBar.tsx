@@ -1,14 +1,8 @@
 import React from 'react';
 import './NavBar.css';
-import {HairSalon} from "../Model/HairSalon";
 import {Link} from "react-router-dom";
-import InstagramImg from "../Assets/instagram-icon.png";
 
-type NavProps = & {
-    info: HairSalon
-}
-
-const NavBar: React.FC<NavProps> = ({info}) => {
+const NavBar: React.FC = () => {
 
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
