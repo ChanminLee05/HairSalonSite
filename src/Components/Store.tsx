@@ -10,7 +10,7 @@ interface OwnProps {
 const Store:React.FC<OwnProps> = ({info}) => {
     return (
         <>
-            <NavBar info={info}/>
+            <NavBar />
             <MainPage info={info}/>
         </>
     );

@@ -86,10 +86,11 @@
 @media (max-width: 768px) {
     .contact-page {
         width: 768px;
+        max-width: 768px;
         padding: 250px 100px;
     }
     .contact-form {
-        height: 950px;
+        height: 1050px;
     }
 
     /*Form-left*/

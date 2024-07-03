@@ -47,6 +47,7 @@
 @media (max-width: 768px) {
     .navbar {
         height: 100px;
+        max-width: 768px;
     }
     .brand-title1 {
         top: -10px;
