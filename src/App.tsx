@@ -9,10 +9,10 @@ import Book from "./Components/Book";
 let data:HairSalon = {
   name: 'Shine Hair Salon',
   address: {
-    streetNumber: '2336 Casselman Crest SW',
+    streetNumber: '581 Glenridding Ravine Drive SW',
     city: 'Edmonton',
     province: 'AB',
-    zipCode: 'N6W 0W1'
+    zipCode: 'T6W 4N9'
   },
   phoneNumber: '780-965-5021',
   instagram: 'IG@Shine_0113',

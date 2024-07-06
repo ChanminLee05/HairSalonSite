@@ -55,7 +55,7 @@
     left: 70px;
     width: 520px;
     height: 470px;
-    transform: translateX(-100%);
+    transform: translateX(-10%);
     opacity: 0;
     transition: transform 1s ease-out, opacity 1s ease-out;
 }
@@ -71,7 +71,7 @@
     bottom: 20px;
     right: 90px;
     padding: 50px;
-    transform: translateX(100%);
+    transform: translateX(10%);
     opacity: 0;
     transition: transform 1s ease-out, opacity 1s ease-out;
 }
