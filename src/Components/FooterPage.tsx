@@ -46,7 +46,7 @@ const FooterPage: React.FC<OwnProps> = ({info}) => {
             <div className="footer-map">
                 <h4 className="location-label">Our Location</h4>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4757.137944698816!2d-113.5332491230098!3d53.40464987035919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01de0b90722fb%3A0x8ce221f05154fcac!2s2336%20Casselman%20Cres%20SW%2C%20Edmonton%2C%20AB%20T6W%200W1!5e0!3m2!1sen!2sca!4v1717288194582!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.4415227398795!2d-113.60808352300963!3d53.40692947018837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x539ff5e823d7fa2d%3A0x27d9945676e2e2f9!2s581%20Glenridding%20Ravine%20Dr%20SW%2C%20Edmonton%2C%20AB%20T6W%201A6!5e0!3m2!1sen!2sca!4v1720243758522!5m2!1sen!2sca"
                     className="google-map"
                     style={{border:0}}
                     allowFullScreen={true}
