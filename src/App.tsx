@@ -7,14 +7,14 @@ import Book from "./Components/Book";
 
 
 let data:HairSalon = {
-  name: 'Shine Hair Salon',
+  name: 'Judy Hair Studio',
   address: {
-    streetNumber: '581 Glenridding Ravine Drive SW',
+    streetNumber: '285 Desrochers Blvd SW',
     city: 'Edmonton',
     province: 'AB',
-    zipCode: 'T6W 4N9'
+    zipCode: 'T6W 3H9'
   },
-  phoneNumber: '780-965-5021',
+  phoneNumber: '780-935-0887',
   instagram: 'IG@Shine_0113',
   services: [
     { id: "1", category: 'Hair Cut', subCategory: 'Kids Hair Cut', description: "Basic haircut for kids", price: "$25 +" },
